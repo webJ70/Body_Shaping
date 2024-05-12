@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    border: 10px inset rgb(55, 207, 38);
+    background-color: #163716;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)), 
+    url(imagen/fondo1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;  
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+}
+/***************************************/
+.menu.abajo {
+    background: rgb(19, 111, 9);
+    padding: 0px 0px 0px 0px;
+
+}
+
+/**************************************/
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    padding: 15px 0px 0px 0px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: default;
+}
+.logo:hover{
+    color: #7bce8c;
+    
+}
+.logo img{
+    width: 170px;    
+}
+.logos{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 150px 0px 0px;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.logos:hover{
+    color: #7bce8c; 
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color: #7bce83;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*************************************************/
+
+
+.header-content{
+    display: flex;
+}
+
+.header-txt{
+    flex-basis:65%;
+}
+.header-txt h1 {
+    font-size: 50px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.header-txt span{
+    color: #ff5a2c;
+}
+.header-txt p{
+    font-size: 17px;
+    color: #c5c5c5;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+/*************************************************/
+
+/*************************************************/
+.aprende{
+padding: 20px 0px 4px 0px;
+background-color: #e1e2e6;
+position: relative;
+
+}
+.aprende-content{
+    text-align: center;
+}
+.aprende-content h2 {
+    font-size: 35px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+.txt-p {
+    font-size: 16px;
+    color: #3e4f9f;
+    padding: 0 250px;
+    margin-bottom: 0px;
+}
+/**********************************************/
+.aprendealimentacion{
+    padding: 5px 0;
+    background-color: #e1e2e6;
+    position: relative;
+    
+    }   
+.aprendealimentacion-content{
+    text-align: center;
+    }  
+
+.aprendealimentacion-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+        
+    }
+.aprendealimentacion-group p,li{
+    color:  #ffffff;
+    text-align: left;
+    text-align: justify;
+    }
+/*************************************************/
+/*************************************************/
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
+.product-1{
+    background-color: #0f290f;
+    cursor: default;
+     
+    
+}
+
+.product-1 h3 {
+    color: #2fb4cc;
+    font-size: 25px;
+    margin-bottom: 5px;  
+    text-align: center;
+}
+
+
+.product-txt{
+    padding: 10px 30px;
+}
+
+
+h3{
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*************************************************/
+.beneficios{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)), 
+        url(imagen/fondoaprende2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+}
+.beneficios-content{
+    text-align: 55px;
+    line-height: 60px;
+    color: #F9FAFC;
+    
+    margin-bottom: 50px;
+}
+.beneficios-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+    text-align: justify;
+}
+.beneficios-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.beneficios-1{
+    padding: 0 100 px;
+}
+.beneficios-1 img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.beneficios-1 h3{
+    color: #eaccb3;
+    font-size: 18px;
+}
+/*************************************************/
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #1737ad;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 16px;
+    color:#414247;
+    margin: 25px 0 45px 0;
+    text-align: justify;
+}
+/*************************************************/
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1{
+    padding: 15px 55px;
+}
+.blog-1 img {
+    width: 100px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.blog-1 h3 {
+    font-size: 25px;
+    color: #e6e7ee;
+}
+.blog-1 p{
+    color:  #e6e7ee;;
+}
+/*************************************************/
+.footer{
+    padding: 40px 0;
+    background-color: #000000;
+}
+
+
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(82, 200, 32);
+        display: none;
+    }
+.menu .navbar ul li{
+    width: 100%;
+}
+#menu:checked~ .navbar{
+    display: initial;
+}
+
+.header{
+    min-height: 0vh;
+    
+}
+.header-content{
+    padding: 100px 30px;
+}
+.header-content p{
+    padding: 0;
+}
+
+.aprende{
+    padding: 30px;
+}
+.aprende-content h2 {
+    padding: 0;
+    font-size: 25px;    
+}
+.txt-p{
+    padding: 0;
+}
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px; 
+}
+
+.product-1 h3 {
+    color: #2fb4cc;
+    font-size: 20px;
+    margin-bottom: 5px;  
+    text-align: center;
+}
+
+/****************************************/
+.beneficios{
+    padding: 30px;
+}
+.beneficios-content{   
+    line-height: 30px;     
+}
+.beneficios-content p{
+padding: 0;
+}
+.beneficios-group{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.beneficios-1{
+    margin-bottom: 5px;
+}
+.beneficios-1 img{
+    width: 40px;
+    margin-bottom: 1px;
+}
+
+h2{
+    font-size: 30px;     
+}
+
+.header-content h1 {
+    font-size: 30px;
+    line-height: 30px;
+
+}
+/*************************************************/
+.blog{
+    padding: 30px;
+}
+.blog-content{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 0;
+}
+
+.footer{
+    padding: 30px;
+}
+.footer-content{
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+@media(max-width:800px){
+    .aprendealimentacion-content h2 {
+        padding: 0;
+        font-size: 30px;    
+    }
+    .aprendealimentacion-group{
+        flex-direction: column;
+        margin-bottom: 0;   
+        gap: 20px;
+    }
+    .aprendealimentacion{
+        padding: 0.05px 20px 0.05px 20px;     
+    }
+      
+}
+
+@media(max-width:1200px){
+    .aprendealimentacion{
+        padding: 0.05px 20px 0.05px 20px;   
+    }
+    
+}
+
